@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                scroll-behavior: smooth;
+                background: linear-gradient(135deg, #0f1f3b 0%, #1d476d 100%);
+                color: #f2f3f5;
+            }
+
+            nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 40px;
+                background: rgba(12, 24, 44, 0.82);
+                backdrop-filter: blur(12px);
+                position: sticky;
+                top: 0;
+                z-index: 10;
+            }
+
+            nav a {
+                color: #a3ddff;
+                margin-left: 20px;
+                text-decoration: none;
+                transition: color 0.2s ease;
+            }
+
+            nav a:hover {
+                color: #ffffff;
+            }
+
+            .hero {
+                text-align: center;
+                padding: 80px 20px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+                margin-bottom: 16px;
+            }
+
+            .hero p {
+                font-size: 18px;
+                opacity: 0.88;
+                max-width: 700px;
+                margin: auto;
+            }
+
+            .btn {
+                display: inline-block;
+                margin-top: 24px;
+                padding: 14px 28px;
+                background: #64d2ff;
+                color: #07203b;
+                border-radius: 28px;
+                text-decoration: none;
+                font-weight: 600;
+                transition: all 0.3s ease;
+            }
+
+            .btn:hover {
+                transform: scale(1.05);
+                background: #a3f0ff;
+            }
+
+            .container {
+                display: flex;
+                gap: 24px;
+                padding: 40px;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: stretch;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .card,
+            .projects,
+            .contacts {
+                flex: 1 1 280px;
+                min-width: 280px;
+                max-width: 340px;
+                padding: 26px;
+                border: 2px solid rgba(163, 210, 255, 0.55);
+                border-radius: 24px;
+                background: rgba(255, 255, 255, 0.08);
+                backdrop-filter: blur(18px);
+                color: #f7f8fb;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 14px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            }
+
+            .card:hover,
+            .projects:hover,
+            .contacts:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.24);
+                border-color: rgba(163, 210, 255, 0.95);
+            }
+
+            .card h2,
+            .card h3,
+            .projects h2,
+            .contacts h2 {
+                margin: 0;
+            }
+
+            .card p,
+            .projects p,
+            .contacts p {
+                margin: 0;
+                line-height: 1.6;
+                opacity: 0.92;
+            }
+
+            .profile {
+                width: 140px;
+                height: 140px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 3px solid rgba(163, 210, 255, 0.7);
+            }
+
+            footer {
+                text-align: center;
+                padding: 20px;
+                opacity: 0.8;
+            }
+
+            @media (max-width: 760px) {
+                nav {
+                    flex-direction: column;
+                }
+
+                .container {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        </style>
+</head>
+<body>
+    <nav>
+        <h2 style="color: #ffd700;">Kronicles</h2>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Contacts</a>
+        </div>
+    </nav>
+
+
+    <section class="hero">
+        <h1> I'm Kronicles</h1>
+        <p>Future Developer | Building my coding journey</p>
+        <a href="#" class="btn">Hire Me</a>
+    </section>
+
+    
+        <div class="container">
+            <div class="card" id="about">
+                <h2>About Me</h2>
+                <img src="me.jpg" alt="My Photo" class="profile">
+                <p> I am learning coding step by step and building real projects.</p>
+            </div>
+
+            <div  class="card">
+                <h3>My Goals</h3>
+                <p>I want to become a professional developer and start earning.</p>
+            </div>
+
+            <div class="card">
+                <h2>My Skills</h2>
+                <p> HTML, CSS, JavaScript(begineer)</p>
+            </div> 
+
+            <div class="card contacts" id="contacts">
+                <h2>Contact Me</h2>
+                <p>Email: amarabenedict2022@gmail.com</p>
+                <p>Phone: +254 7010144494</p>
+            </div>
+
+            <div class="card projects" id="projects">
+                <h2>My Projects</h2>
+                <p>I am currently working on a personal portfolio website and a simple to-do list app.</p>
+            </div>
+
+            <div class="card projects">
+                <h2>Coming Soon</h2>
+                <p>More projects will be added here</p>
+            </div>
+        </div>
+
+
+    <footer>
+        <p>2026 Kronicles</p>
+    </footer>
+
+</body>
+</html>
